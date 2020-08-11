@@ -279,8 +279,28 @@ RIDL
 
 -   Link: <https://github.com/vusec/ridl.git>
 
-Grabber
+Related
 =======
+
+SgxPectre
+=========
+
+-   Link: <https://github.com/OSUSecLab/SgxPectre.git>
+
+speculator
+==========
+
+-   Link: <https://github.com/OSUSecLab/SgxPectre.git>
+
+InvisiSpec
+==========
+
+-   Link: <https://github.com/mjyan0720/InvisiSpec-1.0.git>
+
+SpectreGuard
+============
+
+-   Link: <https://github.com/CSL-KU/SpectreGuard.git>
 
 willyb321/meltdown-spectre-poc-grabber
 --------------------------------------
