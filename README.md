@@ -1,5 +1,12 @@
 Collected from existing repos, this repo lists known Spectre-type,
-Meltdown-type and MDS-type PoCs. PRs are welcome
+Meltdown-type and MDS-type PoCs. PRs are welcome.
+
+If you want to read corresponding codes, please checkout the branch
+[codes](https://github.com/morning21/Spectre_Meltdown_MDS_srcs/tree/codes).
+
+``` bash
+git clone -b codes https://github.com/morning21/Spectre_Meltdown_MDS_srcs.git
+```
 
 Collection
 ==========
@@ -135,7 +142,7 @@ function vul_call(index, sIndex)
 amosbe/spectre-without-shared-memory
 ------------------------------------
 
--   Img: <https://github.com/amosbe/spectre-without-shared-memory>
+-   Link: <https://github.com/amosbe/spectre-without-shared-memory>
 -   Tool: C
 -   Description: Prime+Probe
 
