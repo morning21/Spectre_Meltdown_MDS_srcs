@@ -1,0 +1,57 @@
+[submodule "CVE-2018-3639-specter-v4-"]
+	path = CVE-2018-3639-specter-v4-
+	url = ./CVE-2018-3639-specter-v4-
+[submodule "CVE-2018-3639"]
+	path = CVE-2018-3639
+	url = ./CVE-2018-3639
+[submodule "IAIK_meltdown"]
+	path = IAIK_meltdown
+	url = ./IAIK_meltdown
+[submodule "Meltdown-Spectre"]
+	path = Meltdown-Spectre
+	url = ./Meltdown-Spectre
+[submodule "SMoTherSpectre"]
+	path = SMoTherSpectre
+	url = ./SMoTherSpectre
+[submodule "SpectrePoC"]
+	path = SpectrePoC
+	url = ./SpectrePoC
+[submodule "ZombieLoad"]
+	path = ZombieLoad
+	url = ./ZombieLoad
+[submodule "exploit-cve-2017-5715"]
+	path = exploit-cve-2017-5715
+	url = ./exploit-cve-2017-5715
+[submodule "meltdown-exploit"]
+	path = meltdown-exploit
+	url = ./meltdown-exploit
+[submodule "meltdown-spectre-poc"]
+	path = meltdown-spectre-poc
+	url = ./meltdown-spectre-poc
+[submodule "microarchitectural-attack"]
+	path = microarchitectural-attack
+	url = ./microarchitectural-attack
+[submodule "ridl"]
+	path = ridl
+	url = ./ridl
+[submodule "spectre-attack-sgx"]
+	path = spectre-attack-sgx
+	url = ./spectre-attack-sgx
+[submodule "spectre-meltdown-checker"]
+	path = spectre-meltdown-checker
+	url = ./spectre-meltdown-checker
+[submodule "spectre-meltdown-poc"]
+	path = spectre-meltdown-poc
+	url = ./spectre-meltdown-poc
+[submodule "spectre-without-shared-memory"]
+	path = spectre-without-shared-memory
+	url = ./spectre-without-shared-memory
+[submodule "spectre"]
+	path = spectre
+	url = ./spectre
+[submodule "meltdown"]
+	path = meltdown
+	url = ./meltdown
+[submodule "spectre-attack"]
+	path = spectre-attack
+	url = ./spectre-attack
