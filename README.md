@@ -135,7 +135,7 @@ function vul_call(index, sIndex)
 amosbe/spectre-without-shared-memory
 ------------------------------------
 
--   Img: <https://github.com/amosbe/spectre-without-shared-memory>
+-   Link: <https://github.com/amosbe/spectre-without-shared-memory>
 -   Tool: C
 -   Description: Prime+Probe
 
