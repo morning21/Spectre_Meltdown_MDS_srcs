@@ -34,11 +34,11 @@ ToC:
   - [ZombieLoad](#zombieload)
   - [RIDL](#ridl)
 - [Related](#related)
-- [SgxPectre](#sgxpectre)
-- [speculator](#speculator)
-- [InvisiSpec](#invisispec)
-- [STT](#stt)
-- [SpectreGuard](#spectreguard)
+  - [SgxPectre](#sgxpectre)
+  - [speculator](#speculator)
+  - [InvisiSpec](#invisispec)
+  - [STT](#stt)
+  - [SpectreGuard](#spectreguard)
   - [willyb321/meltdown-spectre-poc-grabber](#willyb321meltdown-spectre-poc-grabber)
 
 <!-- /MarkdownTOC -->
@@ -266,22 +266,22 @@ __attribute__((noinline)) uint8_t bounds_check(uint64_t idx)
 
 # Related
 
-# SgxPectre
+## SgxPectre
 * Link: [https://github.com/OSUSecLab/SgxPectre.git](https://github.com/OSUSecLab/SgxPectre.git)
 
-# speculator
+## speculator
 * Link: [https://github.com/OSUSecLab/SgxPectre.git](https://github.com/OSUSecLab/SgxPectre.git)
 
-# InvisiSpec
+## InvisiSpec
 * Link: [https://github.com/mjyan0720/InvisiSpec-1.0.git](https://github.com/mjyan0720/InvisiSpec-1.0.git)
 * Tool: Gem5
 
-# STT
+## STT
 * Link: [https://github.com/cwfletcher/stt.git](https://github.com/cwfletcher/stt.git)
 * Tool: Gem5
 * Description: Taint Analysis
 
-# SpectreGuard
+## SpectreGuard
 * Link: [https://github.com/CSL-KU/SpectreGuard.git](https://github.com/CSL-KU/SpectreGuard.git)
 
 ## willyb321/meltdown-spectre-poc-grabber
