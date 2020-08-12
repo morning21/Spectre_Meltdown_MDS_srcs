@@ -1,57 +1,57 @@
 [submodule "CVE-2018-3639-specter-v4-"]
 	path = CVE-2018-3639-specter-v4-
-	url = ./CVE-2018-3639-specter-v4-
+	url = https://github.com/Shuiliusheng/CVE-2018-3639-specter-v4-
 [submodule "CVE-2018-3639"]
 	path = CVE-2018-3639
-	url = ./CVE-2018-3639
+	url = https://github.com/mmxsrup/CVE-2018-3639.git
 [submodule "IAIK_meltdown"]
 	path = IAIK_meltdown
-	url = ./IAIK_meltdown
+	url = https://github.com/IAIK/meltdown.git
 [submodule "Meltdown-Spectre"]
 	path = Meltdown-Spectre
-	url = ./Meltdown-Spectre
+	url = https://github.com/adamalston/Meltdown-Spectre
 [submodule "SMoTherSpectre"]
 	path = SMoTherSpectre
-	url = ./SMoTherSpectre
+	url = https://github.com/HexHive/SMoTherSpectre
 [submodule "SpectrePoC"]
 	path = SpectrePoC
-	url = ./SpectrePoC
+	url = https://github.com/crozone/SpectrePoC
 [submodule "ZombieLoad"]
 	path = ZombieLoad
-	url = ./ZombieLoad
+	url = https://github.com/IAIK/ZombieLoad.git
 [submodule "exploit-cve-2017-5715"]
 	path = exploit-cve-2017-5715
-	url = ./exploit-cve-2017-5715
+	url = https://github.com/opsxcq/exploit-cve-2017-5715
 [submodule "meltdown-exploit"]
 	path = meltdown-exploit
-	url = ./meltdown-exploit
+	url = https://github.com/paboldin/meltdown-exploit
 [submodule "meltdown-spectre-poc"]
 	path = meltdown-spectre-poc
-	url = ./meltdown-spectre-poc
+	url = https://github.com/Frichetten/meltdown-spectre-poc
 [submodule "microarchitectural-attack"]
 	path = microarchitectural-attack
-	url = ./microarchitectural-attack
+	url = https://github.com/msmania/microarchitectural-attack
 [submodule "ridl"]
 	path = ridl
-	url = ./ridl
+	url = https://github.com/vusec/ridl.git
 [submodule "spectre-attack-sgx"]
 	path = spectre-attack-sgx
-	url = ./spectre-attack-sgx
+	url = https://github.com/lsds/spectre-attack-sgx
 [submodule "spectre-meltdown-checker"]
 	path = spectre-meltdown-checker
-	url = ./spectre-meltdown-checker
+	url = https://github.com/speed47/spectre-meltdown-checker.git
 [submodule "spectre-meltdown-poc"]
 	path = spectre-meltdown-poc
-	url = ./spectre-meltdown-poc
+	url = https://github.com/mniip/spectre-meltdown-poc
 [submodule "spectre-without-shared-memory"]
 	path = spectre-without-shared-memory
-	url = ./spectre-without-shared-memory
+	url = https://github.com/amosbe/spectre-without-shared-memory
 [submodule "spectre"]
 	path = spectre
-	url = ./spectre
+	url = https://github.com/cgvwzq/spectre
 [submodule "meltdown"]
 	path = meltdown
-	url = ./meltdown
+	url = https://github.com/feruxmax/meltdown
 [submodule "spectre-attack"]
 	path = spectre-attack
-	url = ./spectre-attack
+	url = https://github.com/Eugnis/spectre-attack
