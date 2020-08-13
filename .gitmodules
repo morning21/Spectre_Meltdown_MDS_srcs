@@ -55,3 +55,6 @@
 [submodule "spectre-attack"]
 	path = spectre-attack
 	url = https://github.com/Eugnis/spectre-attack
+[submodule "l1tf-poc"]
+	path = l1tf-poc
+	url = https://github.com/gregvish/l1tf-poc.git
