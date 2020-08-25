@@ -293,29 +293,63 @@ do_access:
 # MDS-type
 ## ZombieLoad
 * Link: [https://github.com/IAIK/ZombieLoad.git](https://github.com/IAIK/ZombieLoad.git)
+* Tool: C
+* Description: Besides four ZombieLoad attack scenarios, this repo contains a `cacheutils` file, which implement the basic elements to construct Flush+Reload attacks, such as the choice of threshold and Flush+Reload function. An embedded disassembly gadget supports accessing address through `mov` directly.
+
+```c
+while (1) {
+    // Ensure the kernel mapping refers to a value not in the cache
+    flush(mapping);
+
+    // Dereference the kernel address and encode in LUT
+    // Not in cache -> reads load buffer entry
+    if (!setjmp(trycatch_buf)) {
+      maccess(0);
+      maccess(mem + 4096 * target[0]);
+    }
+    recover();
+}
+```
 
 ## RIDL
 * Link: [https://github.com/vusec/ridl.git](https://github.com/vusec/ridl.git)
 
 # Related
 
+## oo7
+* Link: [https://github.com/winter2020/oo7](https://github.com/winter2020/oo7)
+* Tool: JavaScript, Shell
+* Description: Employ control flow extraction, *taint analysis* and address analysis at the binary level. 
+
+## KleesSpectre
+* Link: [https://github.com/winter2020/kleespectre][https://github.com/winter2020/kleespectre]
+* Tool: LLVM
+* Description: Employ a symbolic execution tool, [klee](https://github.com/klee/klee), to find suspicious gadgets. It should be noted that the author of this tool is the same as oo7. Compared to taint analysis, symbolic execution is a more fine grained approach. The memory locations accessed by a read/write is captured as symbolic expressions over (tainted) input, instead of simply maintaining that the location accessed by a read/write is tainted. 
+
 ## SgxPectre
 * Link: [https://github.com/OSUSecLab/SgxPectre.git](https://github.com/OSUSecLab/SgxPectre.git)
+* Tool: Python
+* Description: Employ a symbolic execution tool, [angr](https://github.com/angr/angr), to find suspicious gadgets in SGX libraries.
 
 ## speculator
-* Link: [https://github.com/OSUSecLab/SgxPectre.git](https://github.com/OSUSecLab/SgxPectre.git)
+* Link: [https://github.com/ibm-research/speculator](https://github.com/ibm-research/speculator)
+* Tool: C、Python
+* Description: Through analyzing performance counters to detect attacks.
 
 ## InvisiSpec
 * Link: [https://github.com/mjyan0720/InvisiSpec-1.0.git](https://github.com/mjyan0720/InvisiSpec-1.0.git)
 * Tool: Gem5
+* Description: Deploy specific buffers to isolate transient updates from architecture states.
 
 ## STT
 * Link: [https://github.com/cwfletcher/stt.git](https://github.com/cwfletcher/stt.git)
 * Tool: Gem5
-* Description: Taint Analysis
+* Description: Extend from InvisiSpec. Taint Analysis to prevent propagation.
 
 ## SpectreGuard
 * Link: [https://github.com/CSL-KU/SpectreGuard.git](https://github.com/CSL-KU/SpectreGuard.git)
+* Tool: Gem5
+* Description: Extend from InvisiSpec. Allow programmers to claim which data are secret.
 
 ## willyb321/meltdown-spectre-poc-grabber
 * Link: [https://github.com/willyb321/meltdown-spectre-poc-grabber](https://github.com/willyb321/meltdown-spectre-poc-grabber)

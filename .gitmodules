@@ -58,3 +58,6 @@
 [submodule "l1tf-poc"]
 	path = l1tf-poc
 	url = https://github.com/gregvish/l1tf-poc.git
+[submodule "SgxPectre"]
+	path = SgxPectre
+	url = https://github.com/OSUSecLab/SgxPectre
