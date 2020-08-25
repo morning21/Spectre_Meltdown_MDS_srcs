@@ -10,53 +10,55 @@ git clone -b codes https://github.com/morning21/Spectre_Meltdown_MDS_srcs.git
 ToC:
 <!-- MarkdownTOC -->
 
-- [Collection](#collection)
-  - [speed47/spectre-meltdown-checker](#speed47spectre-meltdown-checker)
-  - [mniip/spectre-meltdown-poc](#mniipspectre-meltdown-poc)
-  - [msmania/microarchitectural-attack](#msmaniamicroarchitectural-attack)
-  - [adamalston/Meltdown-Spectre](#adamalstonmeltdown-spectre)
-- [Spectre-type](#spectre-type)
-  - [ErikAugust/spectre.c](#erikaugustspectrec)
-  - [lsds/spectre-attack-sgx](#lsdsspectre-attack-sgx)
-  - [opsxcq/exploit-cve-2017-5715](#opsxcqexploit-cve-2017-5715)
-  - [cgvwzq/spectre](#cgvwzqspectre)
-  - [amosbe/spectre-without-shared-memory](#amosbespectre-without-shared-memory)
-  - [HexHive/SMoTherSpectre](#hexhivesmotherspectre)
-  - [mmxsrup/CVE-2018-3639](#mmxsrupcve-2018-3639)
-  - [Shuiliusheng/CVE-2018-3639-specter-v4-](#shuiliushengcve-2018-3639-specter-v4-)
-- [Meltdown-type](#meltdown-type)
-  - [IAIK/meltdown](#iaikmeltdown)
-  - [feruxmax/meltdown](#feruxmaxmeltdown)
-  - [Frichetten/meltdown-spectre-poc](#frichettenmeltdown-spectre-poc)
-  - [paboldin/meltdown-exploit](#paboldinmeltdown-exploit)
-  - [Semihalf/spectre-meltdown](#semihalfspectre-meltdown)
-  - [gregvish/l1tf-poc.git](#gregvishl1tf-pocgit)
-- [MDS-type](#mds-type)
-  - [ZombieLoad](#zombieload)
-  - [RIDL](#ridl)
-- [Related](#related)
-  - [SgxPectre](#sgxpectre)
-  - [speculator](#speculator)
-  - [InvisiSpec](#invisispec)
-  - [STT](#stt)
-  - [SpectreGuard](#spectreguard)
-  - [willyb321/meltdown-spectre-poc-grabber](#willyb321meltdown-spectre-poc-grabber)
+- [1. Collection](#1-collection)
+  - [1.1 speed47/spectre-meltdown-checker](#11-speed47spectre-meltdown-checker)
+  - [1.2 mniip/spectre-meltdown-poc](#12-mniipspectre-meltdown-poc)
+  - [1.3 msmania/microarchitectural-attack](#13-msmaniamicroarchitectural-attack)
+  - [1.4 adamalston/Meltdown-Spectre](#14-adamalstonmeltdown-spectre)
+- [2. Spectre-type](#2-spectre-type)
+  - [2.1 ErikAugust/spectre.c](#21-erikaugustspectrec)
+  - [2.2 lsds/spectre-attack-sgx](#22-lsdsspectre-attack-sgx)
+  - [2.3 opsxcq/exploit-cve-2017-5715](#23-opsxcqexploit-cve-2017-5715)
+  - [2.4 cgvwzq/spectre](#24-cgvwzqspectre)
+  - [2.5 amosbe/spectre-without-shared-memory](#25-amosbespectre-without-shared-memory)
+  - [2.6 HexHive/SMoTherSpectre](#26-hexhivesmotherspectre)
+  - [2.7 mmxsrup/CVE-2018-3639](#27-mmxsrupcve-2018-3639)
+  - [2.8 Shuiliusheng/CVE-2018-3639-specter-v4-](#28-shuiliushengcve-2018-3639-specter-v4-)
+- [3. Meltdown-type](#3-meltdown-type)
+  - [3.1 IAIK/meltdown](#31-iaikmeltdown)
+  - [3.2 feruxmax/meltdown](#32-feruxmaxmeltdown)
+  - [3.3 Frichetten/meltdown-spectre-poc](#33-frichettenmeltdown-spectre-poc)
+  - [3.4 paboldin/meltdown-exploit](#34-paboldinmeltdown-exploit)
+  - [3.5 Semihalf/spectre-meltdown](#35-semihalfspectre-meltdown)
+  - [3.6 gregvish/l1tf-poc.git](#36-gregvishl1tf-pocgit)
+- [4. MDS-type](#4-mds-type)
+  - [4.1 ZombieLoad](#41-zombieload)
+  - [4.2 RIDL](#42-ridl)
+- [5. Related](#5-related)
+  - [5.1 oo7](#51-oo7)
+  - [5.2 KleesSpectre](#52-kleesspectre)
+  - [5.3 SgxPectre](#53-sgxpectre)
+  - [5.4 speculator](#54-speculator)
+  - [5.5 InvisiSpec](#55-invisispec)
+  - [5.6 STT](#56-stt)
+  - [5.7 SpectreGuard](#57-spectreguard)
+  - [5.8 willyb321/meltdown-spectre-poc-grabber](#58-willyb321meltdown-spectre-poc-grabber)
 
 <!-- /MarkdownTOC -->
 
-# Collection
-## speed47/spectre-meltdown-checker
+# 1. Collection
+## 1.1 speed47/spectre-meltdown-checker
 * Link: [https://github.com/speed47/spectre-meltdown-checker.git](https://github.com/speed47/spectre-meltdown-checker.git)
 * Description: Test whether the system is vulnerable to kinds of attacks.
 * Tool: Shell + Docker
 * Tags: All related CVEs
 
-## mniip/spectre-meltdown-poc
+## 1.2 mniip/spectre-meltdown-poc
 * Link: [https://github.com/mniip/spectre-meltdown-poc](https://github.com/mniip/spectre-meltdown-poc)
 * Tool: Makefile + C
 * Tags: Kernel
 
-## msmania/microarchitectural-attack
+## 1.3 msmania/microarchitectural-attack
 * Link: [https://github.com/msmania/microarchitectural-attack](https://github.com/msmania/microarchitectural-attack)
 * Description: meltdown-toy, meltdown-full, spectre-toy, spectre-full
 
@@ -70,11 +72,11 @@ Touch:
   sysenter
 ```
 
-## adamalston/Meltdown-Spectre
+## 1.4 adamalston/Meltdown-Spectre
 * Link: [https://github.com/adamalston/Meltdown-Spectre](https://github.com/adamalston/Meltdown-Spectre)
 
-# Spectre-type
-## ErikAugust/spectre.c
+# 2. Spectre-type
+## 2.1 ErikAugust/spectre.c
 * Link: [https://gist.github.com/ErikAugust/724d4a969fb2c6ae1bbd7b2a9e3d4bb6](https://gist.github.com/ErikAugust/724d4a969fb2c6ae1bbd7b2a9e3d4bb6)
 * Description: Original C Source
 * Fork: [Eugnis/spectre-attack](https://github.com/Eugnis/spectre-attack), [crozone/SpectrePoC](https://github.com/crozone/SpectrePoC)
@@ -90,7 +92,7 @@ void victim_function(size_t x)
 }
 ```
 
-## lsds/spectre-attack-sgx
+## 2.2 lsds/spectre-attack-sgx
 * Link: [https://github.com/lsds/spectre-attack-sgx](https://github.com/lsds/spectre-attack-sgx)
 * Tool: C
 * Tags: SGX, enclave
@@ -105,7 +107,7 @@ void ecall_victim_function(size_t x, uint8_t * array2, unsigned int * outside_ar
 }
 ```
 
-## opsxcq/exploit-cve-2017-5715
+## 2.3 opsxcq/exploit-cve-2017-5715
 * Link: [https://github.com/opsxcq/exploit-cve-2017-5715](https://github.com/opsxcq/exploit-cve-2017-5715)
 * Description: Sending secrets at a relative realistic scenario, and observing secrets at page level.
 * Tool: C
@@ -119,7 +121,7 @@ void accessPage(int page) {
 }
 ```
 
-## cgvwzq/spectre
+## 2.4 cgvwzq/spectre
 * Link: [https://github.com/cgvwzq/spectre](https://github.com/cgvwzq/spectre)
 * Fork: [ascendr/spectre-chrome](https://github.com/ascendr/spectre-chrome)
 * Tool: C, JavaScript
@@ -146,12 +148,12 @@ function vul_call(index, sIndex)
     }
 ```
 
-## amosbe/spectre-without-shared-memory
+## 2.5 amosbe/spectre-without-shared-memory
 * Link: [https://github.com/amosbe/spectre-without-shared-memory](https://github.com/amosbe/spectre-without-shared-memory)
 * Tool: C
 * Description: Prime+Probe
 
-## HexHive/SMoTherSpectre
+## 2.6 HexHive/SMoTherSpectre
 * Link: [https://github.com/HexHive/SMoTherSpectre](https://github.com/HexHive/SMoTherSpectre)
 
 ```ASM
@@ -165,12 +167,12 @@ OR16
 asm("lfence;" :::);
 ```
 
-## mmxsrup/CVE-2018-3639
+## 2.7 mmxsrup/CVE-2018-3639
 * Link: [https://github.com/mmxsrup/CVE-2018-3639.git](https://github.com/mmxsrup/CVE-2018-3639.git)
 * Tool: C
 * Description: Speculative Store Bypass
 
-## Shuiliusheng/CVE-2018-3639-specter-v4-
+## 2.8 Shuiliusheng/CVE-2018-3639-specter-v4-
 * Link: [https://github.com/Shuiliusheng/CVE-2018-3639-specter-v4-](https://github.com/Shuiliusheng/CVE-2018-3639-specter-v4-)
 * Tool: C
 * Description: 3 kinds of victim gadgets
@@ -183,13 +185,13 @@ void victim_function(size_t idx) {
 }
 ```
 
-# Meltdown-type
-## IAIK/meltdown
+# 3. Meltdown-type
+## 3.1 IAIK/meltdown
 * Link: [https://github.com/IAIK/meltdown.git](https://github.com/IAIK/meltdown.git)
 * Description: Discloser.
 * Tool: C
 
-## feruxmax/meltdown
+## 3.2 feruxmax/meltdown
 * Link: [https://github.com/feruxmax/meltdown](https://github.com/feruxmax/meltdown)
 * Description: Loading specific cache line during constructed exception.
 
@@ -212,7 +214,7 @@ int speculative_transfer(int div, uint8_t secret)
 }
 ```
 
-## Frichetten/meltdown-spectre-poc
+## 3.3 Frichetten/meltdown-spectre-poc
 * Link: [https://github.com/Frichetten/meltdown-spectre-poc](https://github.com/Frichetten/meltdown-spectre-poc)
 
 ```ASM
@@ -231,7 +233,7 @@ asm __volatile__ (
            :  "%rax", "%rbx");
 ```
 
-## paboldin/meltdown-exploit
+## 3.4 paboldin/meltdown-exploit
 * Link: [https://github.com/paboldin/meltdown-exploit](https://github.com/paboldin/meltdown-exploit)
 * Fork: [Digivill/Spectre-MeltDown-](https://github.com/Digivill/Spectre-MeltDown-)
 * TODO: ASM
@@ -246,7 +248,7 @@ jz retry
 mov rbx, qword [rbx + rax]
 ```
 
-## Semihalf/spectre-meltdown
+## 3.5 Semihalf/spectre-meltdown
 * Link: [https://github.com/Semihalf/spectre-meltdown](https://github.com/Semihalf/spectre-meltdown)
 
 ```asm
@@ -258,7 +260,7 @@ __attribute__((noinline)) uint8_t bounds_check(uint64_t idx)
 }
 ```
 
-## gregvish/l1tf-poc.git
+## 3.6 gregvish/l1tf-poc.git
 * Link: [https://github.com/gregvish/l1tf-poc.git](https://github.com/gregvish/l1tf-poc.git)
 * Tool: C, ASM
 * Description: Its README explains the concerns to run the PoC, dumping host memory in a guest. The PoC should run on a VM which is compromised by specific codes. It is necessary to break the mapping of the VM to physical address, which may use a brute force method. It mentions that L1TF succeeds to capture secrets in L1 DCache. Otherwise, no meaningful data will be inferred. 
@@ -290,8 +292,8 @@ do_access:
     mov (%rdi, %rbx, 1), %rbx
 ```
 
-# MDS-type
-## ZombieLoad
+# 4. MDS-type
+## 4.1 ZombieLoad
 * Link: [https://github.com/IAIK/ZombieLoad.git](https://github.com/IAIK/ZombieLoad.git)
 * Tool: C
 * Description: Besides four ZombieLoad attack scenarios, this repo contains a `cacheutils` file, which implement the basic elements to construct Flush+Reload attacks, such as the choice of threshold and Flush+Reload function. An embedded disassembly gadget supports accessing address through `mov` directly.
@@ -311,45 +313,45 @@ while (1) {
 }
 ```
 
-## RIDL
+## 4.2 RIDL
 * Link: [https://github.com/vusec/ridl.git](https://github.com/vusec/ridl.git)
 
-# Related
+# 5. Related
 
-## oo7
+## 5.1 oo7
 * Link: [https://github.com/winter2020/oo7](https://github.com/winter2020/oo7)
 * Tool: JavaScript, Shell
 * Description: Employ control flow extraction, *taint analysis* and address analysis at the binary level. 
 
-## KleesSpectre
+## 5.2 KleesSpectre
 * Link: [https://github.com/winter2020/kleespectre][https://github.com/winter2020/kleespectre]
 * Tool: LLVM
 * Description: Employ a symbolic execution tool, [klee](https://github.com/klee/klee), to find suspicious gadgets. It should be noted that the author of this tool is the same as oo7. Compared to taint analysis, symbolic execution is a more fine grained approach. The memory locations accessed by a read/write is captured as symbolic expressions over (tainted) input, instead of simply maintaining that the location accessed by a read/write is tainted. 
 
-## SgxPectre
+## 5.3 SgxPectre
 * Link: [https://github.com/OSUSecLab/SgxPectre.git](https://github.com/OSUSecLab/SgxPectre.git)
 * Tool: Python
 * Description: Employ a symbolic execution tool, [angr](https://github.com/angr/angr), to find suspicious gadgets in SGX libraries.
 
-## speculator
+## 5.4 speculator
 * Link: [https://github.com/ibm-research/speculator](https://github.com/ibm-research/speculator)
 * Tool: C、Python
 * Description: Through analyzing performance counters to detect attacks.
 
-## InvisiSpec
+## 5.5 InvisiSpec
 * Link: [https://github.com/mjyan0720/InvisiSpec-1.0.git](https://github.com/mjyan0720/InvisiSpec-1.0.git)
 * Tool: Gem5
 * Description: Deploy specific buffers to isolate transient updates from architecture states.
 
-## STT
+## 5.6 STT
 * Link: [https://github.com/cwfletcher/stt.git](https://github.com/cwfletcher/stt.git)
 * Tool: Gem5
 * Description: Extend from InvisiSpec. Taint Analysis to prevent propagation.
 
-## SpectreGuard
+## 5.7 SpectreGuard
 * Link: [https://github.com/CSL-KU/SpectreGuard.git](https://github.com/CSL-KU/SpectreGuard.git)
 * Tool: Gem5
 * Description: Extend from InvisiSpec. Allow programmers to claim which data are secret.
 
-## willyb321/meltdown-spectre-poc-grabber
+## 5.8 willyb321/meltdown-spectre-poc-grabber
 * Link: [https://github.com/willyb321/meltdown-spectre-poc-grabber](https://github.com/willyb321/meltdown-spectre-poc-grabber)
